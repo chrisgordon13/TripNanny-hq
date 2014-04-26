@@ -1,0 +1,15 @@
+        <div class="content" ng-controller="AirportInCtrl">
+            <div class="content-padded">
+                <p>What terminal are you in?</p>
+            </div>
+            <div class="card">
+                <ul class="table-view">
+                    <li class="table-view-cell" ng-repeat="terminal in terminals">
+                        <a class="navigate-right" href="#Airports/{{ terminal.airport_code }}/Terminals/{{ terminal.terminal }}">
+                            <span class="badge">{{ terminal.places }}</span>
+                            Terminal: {{ terminal.terminal }}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>

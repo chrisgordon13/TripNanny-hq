@@ -1,0 +1,15 @@
+        <div class="content" ng-controller="AirportsCtrl" ng-show="show">
+            <div class="content-padded">
+                <p>Nearby airports:</p>
+            </div>
+            <div class="card"> 
+                <ul class="table-view"> 
+                    <li class="table-view-cell" ng-repeat="airport in airports"> 
+                        <a class="navigate-right" href="#Airport-In/{{ airport.code }}">
+                            <span class="badge">{{ airport.distance | number:0 }} mile(s)</span>
+                            {{ airport.name }} 
+                        </a> 
+                    </li> 
+                </ul> 
+            </div>
+        </div>

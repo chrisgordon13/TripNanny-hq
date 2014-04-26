@@ -1,0 +1,12 @@
+        <div class="content" ng-controller="BlogCtrl">
+            <div class="content-padded">
+                <h3>Blog</h3>
+            </div>
+            <ul class="table-view">
+                <li class="table-view-cell media" ng-repeat="post in posts" ng-show="{{ post.title != '' }}">
+                    <a class="navigate-right" href="{{ post.url }}" target="_blank">
+                        <p>{{ post.title }}</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
